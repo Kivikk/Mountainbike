@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mountanbike</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="max-w-[1920px] m-auto mt-4 mb-4 bg-[#9AB6B9]">
+    <!-- navigation and header in one row -->
+    <header
+      class="flex flex-row flex-nowrap gap-4 items-center justify-around align-baseline bg-gradient-to-r from-[#2C5F65] to-[#346B71] border-2 rounded-md"
+    >
+      <nav>
+        <ul
+          class="flex flex-col content-around lg:flex-row lg:gap-4 border-r-2 pr-16"
+        >
+          <li class="p-3 text-[#D0DB97]"><a href="index.html">Home</a></li>
+          <li class="p-3 text-[#D0DB97]"><a href="about.html">Über uns</a></li>
+          <li class="p-3 text-[#D0DB97]">
+            <a href="ausfluege.html">Ausflüge</a>
+          </li>
+          <li class="p-3 text-[#D0DB97]"><a href="contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h1 class="text-3xl text-[#D0DB97]">The Mountainbiker's Dreamteam</h1>
+      </div>
+    </header>
+
+    <main>
+      <!-- Start Form -->
+      <div class="grid h-full m-12 place-items-center">
+        <form class="w-full max-w-lg m-4 border-2 rounded">
+          <div class="flex flex-row justify-around items-baseline">
+            <label
+              class="block uppercase text-xs font-bold mb-2"
+              for="flex-first-name"
+            >
+              Vorname
+            </label>
+            <input
+              class="m-2 bg-black border-2 rounded text-[#D0DB97] italic"
+              type="text"
+              name="First Name"
+              id="firstName"
+              placeholder="Vorname"
+              required
+            />
+          </div>
+          <div class="flex flex-row justify-around items-baseline">
+            <label
+              class="block uppercase text-xs font-bold mb-2"
+              for="flex-last-name"
+            >
+              Nachname
+            </label>
+            <input
+              class="m-2 bg-black border-2 rounded text-[#D0DB97] italic"
+              type="text"
+              name="Last Name"
+              id="lastName"
+              placeholder="Nachname"
+              required
+            />
+          </div>
+          <div class="flex flex-row justify-around items-baseline">
+            <label
+              class="block uppercase text-xs font-bold mb-2"
+              for="flex-email"
+            >
+              E-Mail
+            </label>
+            <input
+              class="m-2 bg-black border-2 rounded text-[#D0DB97] italic"
+              type="text"
+              name="email"
+              id="eMail"
+              placeholder="E-Mail-Adresse"
+              required
+            />
+          </div>
+
+          <div class="flex flex-row justify-around items-baseline">
+            <label
+              class="block uppercase text-xs font-bold mb-2"
+              for="flex-email"
+            >
+              Deine Nachricht
+            </label>
+            <textarea
+              class="m-2 bg-black border-2 rounded text-[#D0DB97] italic"
+              name="Nachricht"
+              rows="3"
+              cols="25"
+              id="Nachricht"
+              placeholder="Schreib uns eine Nachricht"
+              required
+            ></textarea>
+          </div>
+          <div class="flex flex-row justify-end m-2 mr-10">
+            <button class="block border-4 rounded-md p-2 hover:border-black">
+              Absenden
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- End Form -->
+    </main>
+
+    <footer
+      class="fixed bottom-0 w-full flex flex-row p-2 gap-4 justify-between items-baseline bg-gradient-to-r from-[#2C5F65] to-[#346B71] border-2 rounded-md"
+    >
+      <figure>
+        <img
+          class="object-scale-down w-16 h-16"
+          src="src/pictures/instagram_icon-512.png"
+          alt="instagram icon"
+        />
+      </figure>
+      <figure>
+        <img
+          class="object-scale-down w-16 h-16"
+          src="src/pictures/facebook_icon-512.png"
+          alt="instagram icon"
+        />
+      </figure>
+      <figure>
+        <img
+          class="object-scale-down w-12 h-12"
+          src="src/pictures/paragraph_icon.png"
+          alt="instagram icon"
+        />
+      </figure>
+      <figure>
+        <img
+          class="object-scale-down w-16 h-16"
+          src="src/pictures/youtube_icon-512.png"
+          alt="instagram icon"
+        />
+      </figure>
+      <figure>
+        <img
+          class="object-scale-down w-16 h-16"
+          src="src/pictures/mail_icon-512.png"
+          alt="instagram icon"
+        />
+      </figure>
+    </footer>
+  </body>
+</html>
